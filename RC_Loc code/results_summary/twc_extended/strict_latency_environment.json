@@ -1,0 +1,7 @@
+{
+  "platform": "Windows-10-10.0.22631-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "torch": "2.5.0+cu121",
+  "cuda_available": true,
+  "gpu": "NVIDIA RTX 4000 Ada Generation Laptop GPU"
+}

@@ -1,0 +1,23 @@
+{
+  "method": "AaT-base-reimpl",
+  "paper_mapping": "base Anchor-agnostic Transformer (bAaT) architecture",
+  "qualification": "protocol-matched independent reimplementation; not official eAaT code",
+  "tokens": 64,
+  "d_model": 128,
+  "encoder_layers": 3,
+  "heads": 8,
+  "epochs": 400,
+  "batch_size": 256,
+  "optimizer": "AdamW with zero weight decay (equivalent decoupled decay disabled)",
+  "learning_rate": 0.0001,
+  "coordinate_loss": "L1",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "device": "cuda",
+  "gpu": "NVIDIA RTX 4000 Ada Generation Laptop GPU"
+}

@@ -1,0 +1,35 @@
+seed: 42
+data:
+  format: long_csv
+  path: data/raw/huawei/fingerprints.csv
+  coordinate_unit: metre
+  coordinate_frame: local_cartesian
+  rssi_min_dbm: -120
+  train_time_range: null
+  calibration_time_range: null
+  test_time_range: null
+columns:
+  sample_id: sample_id
+  timestamp: timestamp
+  anchor_id: anchor_id
+  rssi_dbm: rssi_dbm
+  x: x_m
+  y: y_m
+  z: z_m
+  floor: floor
+  building: building
+  device: device_id
+evaluation:
+  primary_metric: p90_m
+  target_p90_m: 3.0
+  report_metrics: [mean_m, median_m, p90_m, p95_m, within_3m]
+  split_strategy: chronological_site_holdout
+  bootstrap_samples: 5000
+  robustness_missing_anchor_rates: [0.0, 0.2, 0.4, 0.6]
+  robustness_noise_db: [0.0, 2.0, 4.0, 6.0]
+model:
+  family: RM-GraphLoc
+  pca_components: 96
+  neighbors: 3
+  inverse_distance_power: 2.0
+  conformal_quantile: 0.90

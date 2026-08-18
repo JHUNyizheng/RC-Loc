@@ -1,0 +1,22 @@
+{
+  "split": "70% fit / 15% model-selection / 15% calibration by disjoint spatial group",
+  "nominal_coverage": 0.9,
+  "quantile_rank": "ceil((n_cal+1)*0.90), clipped at n_cal",
+  "test_labels_used": false,
+  "exchangeability_caveat": "Finite-sample marginal coverage requires calibration/test exchangeability; official temporal/device shifts are therefore reported as coverage stress tests, not guaranteed coverage.",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77,
+    88,
+    99,
+    111
+  ],
+  "max_epochs": 200,
+  "pretrain_epochs": 50,
+  "patience": 30
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the RC-Loc manuscript and this software release."
+type: software
+title: "RC-Loc: Reproducible Code and Experiment Artifacts for Mask-Aware Wi-Fi Fingerprint Localization"
+version: "1.0.0-twc-submission"
+date-released: 2026-07-21
+authors:
+  - family-names: Zheng
+    given-names: Yi
+    affiliation: School of Artificial Intelligence, Jianghan University
+    orcid: https://orcid.org/0000-0003-1949-1762
+repository-code: https://github.com/JHUNyizheng/RC-Loc
+license: MIT
+keywords:
+  - indoor localization
+  - Wi-Fi fingerprinting
+  - radio map
+  - distribution shift
+  - uncertainty calibration

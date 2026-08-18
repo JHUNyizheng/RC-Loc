@@ -1,0 +1,23 @@
+{
+  "datasets": [
+    "uji",
+    "uts",
+    "tampere",
+    "uji_library"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "selection": "18% spatial reference-point groups",
+  "PCA_WKNN": "validation-selected components/metric/k/power",
+  "ExtraTrees": {
+    "n_estimators": 600,
+    "max_features": 0.75,
+    "min_samples_leaf": 1
+  },
+  "official_test_used_for_selection": false
+}

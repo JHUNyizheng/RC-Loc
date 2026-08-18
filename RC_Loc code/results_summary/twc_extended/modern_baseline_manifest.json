@@ -1,0 +1,24 @@
+{
+  "methods": [
+    "DNNBN-reimpl",
+    "CNN-RSS-reimpl"
+  ],
+  "qualification": "independent protocol-matched reimplementations, not official author code",
+  "datasets": [
+    "uji",
+    "uts",
+    "tampere",
+    "uji_library"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "max_epochs": 250,
+  "patience": 40,
+  "selection": "18% spatial reference-point groups",
+  "official_test_used_for_selection": false
+}

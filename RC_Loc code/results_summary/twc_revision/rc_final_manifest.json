@@ -1,0 +1,25 @@
+{
+  "method": "RC-Loc",
+  "removed_after_review": [
+    "masked pretraining",
+    "fixed topology loss",
+    "conformal claim from selection set"
+  ],
+  "retained": [
+    "explicit AP mask",
+    "corrupted-view supervision",
+    "representation consistency",
+    "anchor/direct fusion"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "max_epochs": 200,
+  "pretrain_epochs": 0,
+  "patience": 30,
+  "test_labels_used_for_selection": false
+}

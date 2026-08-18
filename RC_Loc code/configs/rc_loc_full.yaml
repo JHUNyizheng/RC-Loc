@@ -1,0 +1,34 @@
+datasets: [uji, uts, tampere, uji_library]
+main_seeds: [11, 22, 33, 44, 55]
+calibration_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+
+data_root: data/raw
+results_root: results
+
+selection:
+  spatial_group_validation_fraction: 0.18
+  objective: median_plus_0.2_p90
+
+training:
+  max_epochs: 200
+  min_epochs: 50
+  patience: 30
+  batch_size: 256
+  learning_rate: 0.0007
+  weight_decay: 0.0002
+  gradient_norm: 5.0
+
+model:
+  embedding_dimension: 96
+  availability_stem: true
+  paired_corruption: true
+  observed_rss_reconstruction: true
+  coarse_floor_building_heads: true
+  validation_selected_anchor_fusion: true
+
+evaluation:
+  primary_metrics: [mean_m, p90_m]
+  secondary_metrics: [median_m, p95_m, p99_m, within_3m, floor_accuracy, building_accuracy]
+  independent_calibration_target: 0.90
+  bootstrap_resamples: 50000
+
