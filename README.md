@@ -5,6 +5,10 @@ Official reproducibility package for **“RC-Loc: Leveraging Mask Perception and
 
 RC-Loc separates received signal strength (RSS) from access-point (AP) availability, trains on paired clean and corrupted fingerprints, and combines a direct coordinate estimate with validation-selected retrieval over surveyed radio-map anchors. This folder contains the source code, tests, experiment entry points, configurations, fixed seed protocols, and compact CSV/JSON records used in the paper.
 
+## Supplementary material
+
+The supplementary figures and descriptions accompanying the manuscript are available in [Supplementary material: Figs. S1–S5](supplementary/README.md). This includes the error ECDFs referenced in the main text, ground-truth/prediction overlays, visible-AP-count strata, month-by-month forward-time evaluation, and spatial error differences. Each figure is provided as an original PDF and a PNG preview, with its evaluation protocol and interpretation.
+
 ## Release contents
 
 - `src/indoorloc/`: data loaders, data adapters, models, metrics, and training utilities.
